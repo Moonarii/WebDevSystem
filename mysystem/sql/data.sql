@@ -18,3 +18,10 @@ CREATE TABLE projects (
 );
 
 
+CREATE TABLE user_passwords (
+  user_id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50),
+  password VARCHAR(50),
+  date_added TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+  
+);
